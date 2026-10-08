@@ -1,0 +1,369 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #eaf6ff;
+  background: #071519;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+  background: #071519;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(83, 124, 140, 0.18), transparent 50%),
+    #071519;
+}
+
+button, input {
+  font: inherit;
+}
+
+.app-shell {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  border: 1px solid rgba(136, 165, 178, 0.2);
+  background: rgba(14, 27, 32, 0.82);
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #8ec1d0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.topbar h1 {
+  margin: 6px 0 0;
+  font-size: clamp(1.7rem, 2vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.primary-button,
+.ghost-button,
+.tiny-button {
+  border: 1px solid rgba(140, 180, 190, 0.3);
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.primary-button {
+  background: #82d9d7;
+  color: #071519;
+  font-weight: 700;
+}
+
+.ghost-button {
+  background: rgba(15, 30, 36, 0.9);
+  color: #d9f4ff;
+}
+
+.tiny-button {
+  padding: 6px 8px;
+  font-size: 11px;
+  background: rgba(31, 50, 56, 0.9);
+  color: #eaf6ff;
+}
+
+.primary-button:hover,
+.ghost-button:hover,
+.tiny-button:hover {
+  transform: translateY(-1px);
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr 1fr;
+  gap: 18px;
+}
+
+.panel {
+  background: rgba(11, 22, 28, 0.85);
+  border: 1px solid rgba(135, 168, 186, 0.2);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #d6eefc;
+}
+
+.trait-panel { grid-column: 1; }
+.world-panel { grid-column: 2; }
+.genome-panel { grid-column: 3; }
+.biology-panel { grid-column: 1 / span 2; }
+.causal-panel { grid-column: 3; }
+.parameters-panel { grid-column: 1 / span 1; }
+.chart-panel { grid-column: 2 / span 2; }
+.sim-panel { grid-column: 1 / span 3; }
+
+.trait-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trait-card {
+  border: 1px solid rgba(130, 167, 174, 0.18);
+  background: rgba(18, 30, 36, 0.8);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.trait-card.selected {
+  border-color: rgba(122, 231, 199, 0.7);
+  box-shadow: inset 0 0 0 1px rgba(122, 231, 199, 0.28);
+}
+
+.trait-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.trait-row label {
+  display: block;
+  font-weight: 600;
+}
+
+.trait-row small {
+  display: block;
+  color: #94adb7;
+  margin-top: 4px;
+}
+
+.trait-card input[type='range'] {
+  width: 100%;
+  accent-color: #7ae7c7;
+}
+
+.trait-metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #c4e2e7;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.world-canvas {
+  height: 330px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 162, 175, 0.2);
+  background: linear-gradient(180deg, #081a1d, #0f2027);
+}
+
+.tab-row {
+  display: flex;
+  gap: 10px;
+  color: #9cc4d0;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  margin-bottom: 12px;
+}
+
+.sequence-box {
+  background: rgba(12, 25, 30, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(133, 169, 180, 0.2);
+  padding: 12px;
+}
+
+.mono {
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  word-break: break-all;
+}
+
+.muted {
+  color: #9cc0ca;
+}
+
+.bio-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.metric-card {
+  background: rgba(18, 30, 36, 0.8);
+  border: 1px solid rgba(125, 162, 172, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.metric-card label {
+  display: block;
+  color: #8bb1b9;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.metric-card strong {
+  display: block;
+  font-size: 1.1rem;
+  margin: 8px 0 0;
+}
+
+.metric-card small {
+  color: #9fe4d8;
+}
+
+.pathway-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.pathway-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  background: rgba(18, 29, 35, 0.8);
+  border: 1px solid rgba(143, 172, 182, 0.2);
+  padding: 10px;
+}
+
+.arrow {
+  color: #7ae7c7;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.parameter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(130, 159, 172, 0.15);
+  padding-bottom: 8px;
+}
+
+.chart-wrap {
+  height: 240px;
+}
+
+.control-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.small {
+  padding: 8px 12px;
+  font-size: 0.82rem;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(110px, 1fr));
+  gap: 12px;
+}
+
+.status-grid div {
+  background: rgba(15, 30, 36, 0.8);
+  border: 1px solid rgba(124, 162, 174, 0.2);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.status-grid span {
+  display: block;
+  color: #8db1bb;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.status-grid strong {
+  display: block;
+  margin-top: 8px;
+}
+
+.error-banner {
+  background: rgba(86, 31, 38, 0.85);
+  border: 1px solid rgba(255, 130, 130, 0.35);
+  color: #ffd8da;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 980px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trait-panel,
+  .world-panel,
+  .genome-panel,
+  .biology-panel,
+  .causal-panel,
+  .parameters-panel,
+  .chart-panel,
+  .sim-panel {
+    grid-column: auto;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+

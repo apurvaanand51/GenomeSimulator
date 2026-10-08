@@ -1,0 +1,32 @@
+[
+  {
+    "id": "muscle_efficiency_pathway",
+    "name": "Muscle Efficiency Pathway",
+    "description": "Virtual pathway governing how energy converts into directed flight force.",
+    "nodes": ["GENE_FLIGHT", "PROTEIN_FLIGHT", "flight_speed", "energy_consumption"]
+  },
+  {
+    "id": "energy_metabolism_pathway",
+    "name": "Energy Metabolism Pathway",
+    "description": "How nutrient reserves feed into activity and maintenance.",
+    "nodes": ["GENE_METABOLISM", "PROTEIN_METABOLISM", "metabolism_rate", "energy"]
+  },
+  {
+    "id": "thermal_response_pathway",
+    "name": "Thermal Response Pathway",
+    "description": "Controls how the mosquito responds to hotter temperature conditions.",
+    "nodes": ["GENE_THERMAL_RESPONSE", "PROTEIN_THERMAL", "temperature_tolerance", "stress"]
+  },
+  {
+    "id": "flight_mechanics_pathway",
+    "name": "Flight Mechanics Pathway",
+    "description": "Links wing form to aerodynamic performance and movement.",
+    "nodes": ["GENE_WING", "PROTEIN_WING", "wing_area", "flight_speed"]
+  },
+  {
+    "id": "feeding_pathway",
+    "name": "Feeding Pathway",
+    "description": "Associates hunger and movement into food seeking behaviour.",
+    "nodes": ["GENE_HUNGER", "PROTEIN_HUNGER", "hunger", "activity"]
+  }
+]

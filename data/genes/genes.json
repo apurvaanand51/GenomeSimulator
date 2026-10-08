@@ -1,0 +1,134 @@
+[
+  {
+    "id": "GENE_FLIGHT",
+    "name": "Flight Efficiency Gene",
+    "description": "Virtual gene controlling the simulated efficiency of wing muscles and flight stroke patterns.",
+    "sequence": "ATGCGTACCGTGGACTAACCGTTGACGTA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_FLIGHT",
+    "traits": ["flight_speed", "wing_size"],
+    "pathway": "muscle_efficiency_pathway",
+    "biological_effects": {"flight_speed": 0.65, "energy_consumption": 0.35}
+  },
+  {
+    "id": "GENE_WING",
+    "name": "Wing Morphology Gene",
+    "description": "Determines the virtual wing area and aerodynamic surface contribution.",
+    "sequence": "ATGGCCTAGTTCGATGCGTTGAAACCCGA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_WING",
+    "traits": ["wing_size", "body_size"],
+    "pathway": "flight_mechanics_pathway",
+    "biological_effects": {"wing_area": 0.7, "flight_speed": 0.45}
+  },
+  {
+    "id": "GENE_METABOLISM",
+    "name": "Metabolic Rate Gene",
+    "description": "Regulates the simulated energy conversion rate for cellular maintenance.",
+    "sequence": "ATGCCGGTTACCTTGGCTAACGATATGCC",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_METABOLISM",
+    "traits": ["metabolism", "stress_resistance"],
+    "pathway": "energy_metabolism_pathway",
+    "biological_effects": {"metabolism_rate": 0.8, "energy_consumption": 0.5}
+  },
+  {
+    "id": "GENE_ENERGY",
+    "name": "Energy Conversion Gene",
+    "description": "Virtual enzyme-like regulator for converting nutrient energy into usable cellular power.",
+    "sequence": "ATGGTTGACCAAGGTACCTGATCGTACCA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_ENERGY",
+    "traits": ["energy_efficiency", "metabolism"],
+    "pathway": "energy_conversion_pathway",
+    "biological_effects": {"energy": 0.8, "metabolism_rate": 0.2}
+  },
+  {
+    "id": "GENE_GROWTH",
+    "name": "Growth and Development Gene",
+    "description": "Governs body maintenance and developmental scaling in the virtual organism.",
+    "sequence": "ATGCTTCCGGACGTTAAACCGGTTATGGA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_GROWTH",
+    "traits": ["body_size", "reproduction_rate"],
+    "pathway": "development_pathway",
+    "biological_effects": {"body_mass": 0.7, "lifespan": 0.15}
+  },
+  {
+    "id": "GENE_LIFESPAN",
+    "name": "Longevity Gene",
+    "description": "Influences the simulated cellular repair and maintenance budget over time.",
+    "sequence": "ATGGACCGTATGCTGACCAAGGTTCTGCA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_LIFESPAN",
+    "traits": ["lifespan", "energy_efficiency"],
+    "pathway": "repair_pathway",
+    "biological_effects": {"lifespan": 0.5, "stress": -0.1}
+  },
+  {
+    "id": "GENE_REPRODUCTION",
+    "name": "Reproductive Investment Gene",
+    "description": "Virtual signaling pathway for reproductive allocation and larval production.",
+    "sequence": "ATGCGATTGCCAGGTTGACCGTAACCTGA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_REPRODUCTION",
+    "traits": ["reproduction_rate", "lifespan"],
+    "pathway": "reproduction_pathway",
+    "biological_effects": {"reproduction_rate": 0.6, "energy": -0.25}
+  },
+  {
+    "id": "GENE_THERMAL_RESPONSE",
+    "name": "Thermal Response Gene",
+    "description": "Simulated heat-stress response and thermal stability regulator.",
+    "sequence": "ATGATCTTCGGAACCTGGTGCATGCCCCA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_THERMAL",
+    "traits": ["temperature_tolerance", "navigation"],
+    "pathway": "thermal_response_pathway",
+    "biological_effects": {"temperature_tolerance": 0.8, "stress": -0.25}
+  },
+  {
+    "id": "GENE_HUNGER",
+    "name": "Nutrient Seeking Gene",
+    "description": "Virtual hunger signaling pathway that biases behavior toward host seeking.",
+    "sequence": "ATGGTACGGTTCAAACCGGTCTGAACTGA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_HUNGER",
+    "traits": ["feeding_drive", "activity"],
+    "pathway": "feeding_pathway",
+    "biological_effects": {"hunger": 0.7, "activity": 0.3}
+  },
+  {
+    "id": "GENE_ACTIVITY",
+    "name": "Motor Activity Gene",
+    "description": "Controls the virtual motor drive and movement frequency.",
+    "sequence": "ATGTTACCGGATGCCGTTAACGGTTCGAA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_ACTIVITY",
+    "traits": ["activity", "flight_speed"],
+    "pathway": "motor_pathway",
+    "biological_effects": {"activity": 0.8, "flight_speed": 0.35}
+  },
+  {
+    "id": "GENE_NAVIGATION",
+    "name": "Navigation Gene",
+    "description": "Virtual sensory integration support for orientation and environmental awareness.",
+    "sequence": "ATGATGCCGTTAGGCTTGGACCGTAACCG",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_NAVIGATION",
+    "traits": ["navigation", "flight_speed"],
+    "pathway": "navigation_pathway",
+    "biological_effects": {"navigation_efficiency": 0.7, "activity": 0.2}
+  },
+  {
+    "id": "GENE_STRESS",
+    "name": "Stress Response Gene",
+    "description": "Virtual stress buffering that modulates resilience under heat and depletion.",
+    "sequence": "ATGGTTACCGTACAACTGGTTGACCCGAA",
+    "baseline_expression": 1.0,
+    "protein_id": "PROTEIN_STRESS",
+    "traits": ["stress_resistance", "temperature_tolerance"],
+    "pathway": "stress_response_pathway",
+    "biological_effects": {"stress": -0.5, "temperature_tolerance": 0.25}
+  }
+]

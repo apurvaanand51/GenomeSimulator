@@ -1,0 +1,134 @@
+[
+  {
+    "id": "body_size",
+    "name": "Body Size",
+    "category": "BODY",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Overall size of the virtual mosquito body.",
+    "affected_genes": ["GENE_GROWTH", "GENE_WING"]
+  },
+  {
+    "id": "wing_size",
+    "name": "Wing Size",
+    "category": "BODY",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Wing area and lift properties.",
+    "affected_genes": ["GENE_WING", "GENE_FLIGHT"]
+  },
+  {
+    "id": "flight_speed",
+    "name": "Flight Speed",
+    "category": "BEHAVIOUR",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Forward travel velocity and flight efficiency.",
+    "affected_genes": ["GENE_FLIGHT", "GENE_ACTIVITY", "GENE_NAVIGATION"]
+  },
+  {
+    "id": "activity",
+    "name": "Activity",
+    "category": "BEHAVIOUR",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "General locomotor intensity.",
+    "affected_genes": ["GENE_ACTIVITY", "GENE_HUNGER"]
+  },
+  {
+    "id": "navigation",
+    "name": "Navigation",
+    "category": "BEHAVIOUR",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Ability to orient toward food and shelter.",
+    "affected_genes": ["GENE_NAVIGATION", "GENE_THERMAL_RESPONSE"]
+  },
+  {
+    "id": "feeding_drive",
+    "name": "Feeding Drive",
+    "category": "BEHAVIOUR",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Motivation to seek nutrient sources.",
+    "affected_genes": ["GENE_HUNGER", "GENE_METABOLISM"]
+  },
+  {
+    "id": "metabolism",
+    "name": "Metabolism",
+    "category": "PHYSIOLOGY",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Cellular turnover and energy use.",
+    "affected_genes": ["GENE_METABOLISM", "GENE_ENERGY"]
+  },
+  {
+    "id": "energy_efficiency",
+    "name": "Energy Efficiency",
+    "category": "PHYSIOLOGY",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "How efficiently captured energy is used.",
+    "affected_genes": ["GENE_ENERGY", "GENE_LIFESPAN"]
+  },
+  {
+    "id": "lifespan",
+    "name": "Lifespan",
+    "category": "PHYSIOLOGY",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Longevity of the virtual mosquito.",
+    "affected_genes": ["GENE_LIFESPAN", "GENE_REPRODUCTION"]
+  },
+  {
+    "id": "reproduction_rate",
+    "name": "Reproduction Rate",
+    "category": "PHYSIOLOGY",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Reproductive investment and larval output.",
+    "affected_genes": ["GENE_REPRODUCTION", "GENE_GROWTH"]
+  },
+  {
+    "id": "temperature_tolerance",
+    "name": "Temperature Tolerance",
+    "category": "PHYSIOLOGY",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Ability to function at elevated temperatures.",
+    "affected_genes": ["GENE_THERMAL_RESPONSE", "GENE_STRESS"]
+  },
+  {
+    "id": "stress_resistance",
+    "name": "Stress Resistance",
+    "category": "STRESS",
+    "minimum": 0.5,
+    "maximum": 1.5,
+    "baseline": 1.0,
+    "unit": "fold",
+    "description": "Ability to withstand stress and heat loads.",
+    "affected_genes": ["GENE_STRESS", "GENE_METABOLISM"]
+  }
+]

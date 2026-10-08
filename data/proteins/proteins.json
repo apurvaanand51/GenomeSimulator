@@ -1,0 +1,110 @@
+[
+  {
+    "id": "PROTEIN_FLIGHT",
+    "name": "Flight Muscle Protein",
+    "gene_id": "GENE_FLIGHT",
+    "function": "Muscle contraction efficiency for flight propulsion.",
+    "amino_acid_sequence": "MRTWTSNRCDVGKYCQWAL",
+    "activity": 1.0,
+    "structural_properties": {"helices": 3, "spheres": 12, "bonds": 18}
+  },
+  {
+    "id": "PROTEIN_WING",
+    "name": "Wing Support Protein",
+    "gene_id": "GENE_WING",
+    "function": "Wing rigidity and elastic response for efficient flapping.",
+    "amino_acid_sequence": "MVLSLSDVNKPGVHYLQGPA",
+    "activity": 1.0,
+    "structural_properties": {"helices": 2, "spheres": 10, "bonds": 15}
+  },
+  {
+    "id": "PROTEIN_METABOLISM",
+    "name": "Metabolic Catalyst Protein",
+    "gene_id": "GENE_METABOLISM",
+    "function": "Accelerates conversion of nutrient reserves into available energy.",
+    "amino_acid_sequence": "MPLLGLNDMPRSNVYTMQPA",
+    "activity": 1.0,
+    "structural_properties": {"helices": 4, "spheres": 16, "bonds": 22}
+  },
+  {
+    "id": "PROTEIN_ENERGY",
+    "name": "Cellular Energy Protein",
+    "gene_id": "GENE_ENERGY",
+    "function": "Represents a virtual ATP-like energy conversion pathway.",
+    "amino_acid_sequence": "MVDQVGLIGTHYPSNQKRAA",
+    "activity": 1.0,
+    "structural_properties": {"helices": 3, "spheres": 13, "bonds": 19}
+  },
+  {
+    "id": "PROTEIN_GROWTH",
+    "name": "Developmental Growth Protein",
+    "gene_id": "GENE_GROWTH",
+    "function": "Supports tissue scaling and developmental growth.",
+    "amino_acid_sequence": "MLSGLDNKLPDTVYQRLVGT",
+    "activity": 1.0,
+    "structural_properties": {"helices": 2, "spheres": 11, "bonds": 16}
+  },
+  {
+    "id": "PROTEIN_LIFESPAN",
+    "name": "Longevity Maintenance Protein",
+    "gene_id": "GENE_LIFESPAN",
+    "function": "Maintains repair capacity and cell resilience over time.",
+    "amino_acid_sequence": "MDRMLTQGSSVKAGQYPHWL",
+    "activity": 1.0,
+    "structural_properties": {"helices": 3, "spheres": 10, "bonds": 17}
+  },
+  {
+    "id": "PROTEIN_REPRODUCTION",
+    "name": "Reproductive Signal Protein",
+    "gene_id": "GENE_REPRODUCTION",
+    "function": "Coordinates the virtual reproductive investment response.",
+    "amino_acid_sequence": "MRIPRLGTSVTNPKYRTQAG",
+    "activity": 1.0,
+    "structural_properties": {"helices": 2, "spheres": 9, "bonds": 14}
+  },
+  {
+    "id": "PROTEIN_THERMAL",
+    "name": "Thermal Tolerance Protein",
+    "gene_id": "GENE_THERMAL_RESPONSE",
+    "function": "Stabilizes the mosquito under elevated heat conditions.",
+    "amino_acid_sequence": "MIFGTSGACMPRHVGYICLQ",
+    "activity": 1.0,
+    "structural_properties": {"helices": 3, "spheres": 12, "bonds": 18}
+  },
+  {
+    "id": "PROTEIN_HUNGER",
+    "name": "Hunger Signaling Protein",
+    "gene_id": "GENE_HUNGER",
+    "function": "Biases searching and host-seeking behavior during nutrient shortage.",
+    "amino_acid_sequence": "MVRSKPGSNLTQEDKLMRWA",
+    "activity": 1.0,
+    "structural_properties": {"helices": 2, "spheres": 11, "bonds": 15}
+  },
+  {
+    "id": "PROTEIN_ACTIVITY",
+    "name": "Motor Activity Protein",
+    "gene_id": "GENE_ACTIVITY",
+    "function": "Provides the virtual motor drive for movement and movement frequency.",
+    "amino_acid_sequence": "MLTGDAVNGSKQERVVPLLQ",
+    "activity": 1.0,
+    "structural_properties": {"helices": 2, "spheres": 12, "bonds": 16}
+  },
+  {
+    "id": "PROTEIN_NAVIGATION",
+    "name": "Navigation Sensor Protein",
+    "gene_id": "GENE_NAVIGATION",
+    "function": "Integrates sensory information to refine flight direction.",
+    "amino_acid_sequence": "MMPLRLGWDRNRTGNLQKVT",
+    "activity": 1.0,
+    "structural_properties": {"helices": 2, "spheres": 10, "bonds": 15}
+  },
+  {
+    "id": "PROTEIN_STRESS",
+    "name": "Stress Buffer Protein",
+    "gene_id": "GENE_STRESS",
+    "function": "Mitigates cellular stress induced by heat and exhaustion.",
+    "amino_acid_sequence": "MVTVQLVDPKRHDMALVGQY",
+    "activity": 1.0,
+    "structural_properties": {"helices": 3, "spheres": 11, "bonds": 17}
+  }
+]
